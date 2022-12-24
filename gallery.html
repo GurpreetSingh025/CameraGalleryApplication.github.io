@@ -1,0 +1,32 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="galleryStyle.css">         
+    </head>
+
+    <body>
+         <div class="back">
+              Back
+         </div>         
+         
+         <div class="gallery-cont">
+             <div class="media-cont">
+                 <div class="media">
+                    <video src="temporary.mp4" autoplay loop controls></video>
+                 </div>
+
+                 <div class="download">Download</div>
+                 <div class="delete">Delete</div>
+             </div>
+         </div>
+    </body>
+    
+    <script src="db.js"></script>
+    <script src="gallery.js"></script>
+    <script >
+         let backElem = document.querySelector(".back");
+         backElem.addEventListener("click" , (e) => {
+             location.assign("index.html");
+         });
+    </script>
+
+</html>

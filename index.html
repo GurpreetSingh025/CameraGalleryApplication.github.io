@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+    <div class="video-cont">
+        <video autoplay  src=""></video>
+    </div>
+
+    <div class="action-cont">
+         <div class="record-btn-cont">
+             <div class="record-btn "></div>
+         </div>
+
+         <div class="capture-btn-cont">              
+             <div class="capture-btn"></div>
+         </div>
+
+         <!-- <div class="screen-share-cont">
+             <div class="screen-share-btn"></div>
+         </div> -->
+    </div>
+
+    <div class="counter-cont">
+        <div class="counter">00 : 00 : 00</div>
+    </div>
+    
+    <div class="filtering-cont">
+        <div class="filter orange"></div>
+        <div class="filter brown"></div>
+        <div class="filter pink"></div>
+        <div class="filter transparent"></div>
+    </div>
+    
+    <div class="filtering-layer">
+
+    </div>
+
+    <div class="gallery">
+       <!-- 
+        <span class="material-icons-outlined"> 
+            collections           
+        </span>
+        -->
+       Gallery
+    </div>
+    
+</body>
+<script src="script.js"></script>
+
+<!-- Here  are creating seperate file for indexdb code -->
+<!-- we are using indexdb to store recorded videos and captured photos and to implement gallery feature -->
+<!-- As videos and images are heavy in size that's why indexdb is used instead of local storage -->
+<script src="db.js"> </script>
+<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+
+</html>
